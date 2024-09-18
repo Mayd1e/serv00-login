@@ -77,7 +77,7 @@ async def main():
     except Exception as e:
         print(f'读取 accounts.json 文件时出错: {e}')
         return
-    await send_telegram_message(accounts_json)
+    # await send_telegram_message(accounts_json)
     for account in accounts:
         username = account['username']
         password = account['password']
